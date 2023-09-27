@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './components/main/main.component';
 import { ListComponent } from './components/list/list.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 const routes: Routes = [
-  {path: 'home', component: MainComponent},
-  {path: 'list', component: ListComponent},
+  {path: 'home', component: ListComponent},
+  {path: 'detail', component: DetailComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', redirectTo: '/home'},
 ];

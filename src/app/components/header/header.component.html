@@ -1,7 +1,9 @@
 <mat-toolbar>
-  <button mat-icon-button>
-    <mat-icon>home</mat-icon>
-  </button>
+  <a routerLink="./home">
+    <button mat-icon-button>
+      <mat-icon>home</mat-icon>
+    </button>
+  </a>
   <span>Gutendex App</span>
   <span class="spacer"></span>
   <button (click)="prevPage()" mat-icon-button>
@@ -12,4 +14,3 @@
     <mat-icon>navigate_next</mat-icon>
   </button>
 </mat-toolbar>
-

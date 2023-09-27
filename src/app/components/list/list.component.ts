@@ -14,7 +14,7 @@ export class ListComponent implements OnInit{
   constructor(public dataServ: DataService){}
 
   ngOnInit(): void {
-    this.dataServ.allBooks.subscribe(books => this.books = books);
+    this.dataServ.pageBooks.subscribe(books => this.books = books);
   }
 
 }

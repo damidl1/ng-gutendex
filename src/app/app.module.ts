@@ -7,21 +7,20 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { MainComponent } from './components/main/main.component';
 import { ListComponent } from './components/list/list.component';
 import { CardComponent } from './components/card/card.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent,
     ListComponent,
-    CardComponent
+    CardComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
