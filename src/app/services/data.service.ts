@@ -44,6 +44,10 @@ export class DataService {
     this.pageBooks.next(this.allBooks.value.slice(position, position + 10));
   }
 
+  getBookById(bookId: number): Book | undefined{
+    return this.allBooks.value.find(book => book.id === bookId);
+  }
+
   prevPage(){
     if (this.pageNumber > 1) {
       this.pageNumber --;
