@@ -9,9 +9,11 @@
   </mat-card-header>
 
   <mat-card-content>
-
-    <p>Subjects: {{ selectedBook.subjects.join(', ') }}</p>
-    <p>Languages: {{ selectedBook.languages.join(', ') }}</p>
-
+      <div class="subjects-text">
+        <p>Subjects: {{ selectedBook.subjects.join(', ') }}</p>
+      </div>
+      <div class="languages-text">
+        <p>Languages: {{ selectedBook.languages.join(', ') }}</p>
+      </div>
   </mat-card-content>
 </mat-card>
